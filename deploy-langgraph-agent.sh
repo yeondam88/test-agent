@@ -4,9 +4,9 @@
 # Configuration - Update these values
 COOLIFY_URL="http://5.78.72.45:8000"
 API_KEY="ipKi4S78ov3aMAe0J6T5mItSQEPhCBqbwYD2r8Kje8706be2"
-REPO_URL="https://github.com/langchain-ai/open_deep_research"  # GitHub/GitLab repo containing your agent
+REPO_URL="https://github.com/yeondam88/test-agent"  # GitHub/GitLab repo containing your agent
 BRANCH="main"
-AGENT_NAME="Open Deep Research"
+AGENT_NAME="Test LangGraph Agent"
 AGENT_PORT=8000  # FastAPI will listen on this port
 
 # Get CSRF token and cookies
@@ -31,7 +31,7 @@ if [ -n "$CSRF_TOKEN" ]; then
       \"port\": $AGENT_PORT,
       \"auto_deploy\": true,
       \"environment\": [
-        {\"name\": \"OPENAI_API_KEY\", \"value\": \"your-openai-api-key\"},
+        {\"name\": \"OPENAI_API_KEY\", \"value\": \"YOUR_ACTUAL_OPENAI_API_KEY_HERE\"},
         {\"name\": \"HOST\", \"value\": \"0.0.0.0\"},
         {\"name\": \"PORT\", \"value\": \"$AGENT_PORT\"}
       ]
